@@ -1,0 +1,7 @@
+# Project exclude paths
+/venv/
+/tmp/
+/.idea/
+/povar_blog/blog/migrations/
+!povar_blog/media/.gitkeep
+media/*
