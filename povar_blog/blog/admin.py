@@ -50,6 +50,10 @@ class PostAdmin(admin.ModelAdmin):
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
     """Регистрация модели рецептов"""
+    save_as = True
+    save_on_top = True
+    save_as_continue = True
+
     list_display = ['pk', 'name', 'prep_time', 'cook_time', 'post']
     list_display_links = ['name']
 

@@ -325,7 +325,7 @@ ol {
   Header
 -----------------------*/
 
-.header__top {
+.header__top {menu
 	background: #f5f5f5;
 }
 
@@ -405,6 +405,28 @@ ol {
 	opacity: 0;
 	visibility: hidden;
 	padding: 10px 0;
+}
+
+.header__menu ul li .children {
+    position: absolute;
+    left: 100px;
+    top: 62px;
+	width: 180px;
+	background: #222222;
+	z-index: 9;
+	text-align: left;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	opacity: 0;
+	visibility: hidden;
+	padding: 10px 0;
+}
+
+.header__menu ul li:hover .children {
+	opacity: 1;
+	visibility: visible;
+	top: 41px;
 }
 
 .header__menu ul li .dropdown__menu li {
@@ -2552,6 +2574,9 @@ ol {
 /*---------------------
   Contact
 -----------------------*/
+.contact_icon {
+    max-width: 5%;
+}
 
 .contact {
 	padding-top: 0;

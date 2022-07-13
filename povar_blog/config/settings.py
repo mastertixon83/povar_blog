@@ -18,8 +18,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'mptt',
+    'ckeditor',
 
     'blog.apps.BlogConfig',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
@@ -97,3 +99,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default is 10 pixels
 MPTT_ADMIN_LEVEL_INDENT = 20
+
+CKEDITOR_UPLOAD_PATH = "uploads/"

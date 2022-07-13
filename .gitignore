@@ -2,6 +2,9 @@
 /venv/
 /tmp/
 /.idea/
-/povar_blog/blog/migrations/
-!povar_blog/media/.gitkeep
+/blog/migrations/
+#исключим всё содержимое папки media
 media/*
+#кроме конкретного файла:
+!media/.gitkeep
+

@@ -34,7 +34,7 @@
                                                     <li>3 min read</li>
                                                     <li>20 Comment</li>
                                                 </ul>
-                                                <p>{{ post.text|slice:":250" }}</p>
+                                                <p>{{ post.text|truncatewords:20 }} ...</p>
                                             </div>
                                         </div>
                                     {% endfor %}
