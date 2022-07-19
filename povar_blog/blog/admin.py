@@ -65,5 +65,5 @@ class CommentAdmin(admin.ModelAdmin):
     save_on_top = True
     save_as_continue = True
 
-    list_display = ['pk', 'name', 'email']
-    list_display_links = ['name']
+    list_display = ['pk', 'name', 'email', 'website', 'created_at']
+    list_display_links = ['pk', 'name']

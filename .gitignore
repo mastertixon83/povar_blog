@@ -2,8 +2,10 @@
 /venv/
 /tmp/
 /.idea/
-/blog/migrations/
+/blog/migrations/*
 #исключим всё содержимое папки media
+cache/*
+!cache/.gitkeep
 media/*
 #кроме конкретного файла:
 !media/.gitkeep

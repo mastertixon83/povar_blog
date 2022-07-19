@@ -4,12 +4,19 @@ from blog.models import *
 register = template.Library()
 
 
-# @register.simple_tag()
+def get_all_categories():
+    return Category.objects.all()
+
+
+@register.simple_tag()
+def get_list_category():
+    return get_all_categories()
+
 
 @register.inclusion_tag('blog/include/tags/top_menu.html')
 def get_categories():
     # .filter(parent__isnull=True)
-    category = Category.objects.all()#order_by('name')
+    category = get_all_categories()#order_by('name')
     return {'list_category': category}
 
 
